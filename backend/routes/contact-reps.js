@@ -1,0 +1,1 @@
+//TODO: Make a route that takes in a cause, and creates a mailTo link/button. Have axios direct to this route onSubmit of cause component
