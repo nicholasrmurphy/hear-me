@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import axios from 'axios';
 const API_KEY = "AIzaSyAd9ET0aNrBcM1WbHmWOr7ZhQ0sYOPUtwk"; //TODO: update so that key is fecthed from mongodb
 const BASE_CIVIC_URL = "https://www.googleapis.com/civicinfo/v2/representatives?includeOffices=true&levels=administrativeArea1&roles=legislatorLowerBody&roles=legislatorUpperBody";
-const submitButtonClass = 'btn btn-primary btn-lg btn-block';
+const submitButtonClass = 'btn btn-success btn-lg btn-block';
 const invisibleClass = "invisible";
 
 export default class SingleCause extends Component {
@@ -249,7 +249,7 @@ export default class SingleCause extends Component {
                         </Modal.Body>
                         <Modal.Footer>
                             <a href={this.state.mailToLink} className={this.state.submitClass} role="button">Be Heard</a>
-                            <button type="button" className="btn btn-secondary btn-lg btn-block" onClick={this.findRepresentatives}>
+                            <button type="button" className="btn btn-primary btn-lg btn-block" onClick={this.findRepresentatives}>
                                 Find My Representatives
                             </button>
                             <button className="btn btn-secondary btn-sm btn-block" onClick={this.closeModal}>Cancel</button>
